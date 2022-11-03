@@ -1,6 +1,6 @@
 FROM node:12
-COPY nodeapp /nodeapp
-WORKDIR /nodeapp
+COPY app /app
+WORKDIR /app
 RUN npm install
-CMD ["node", "/nodeapp/app.js"]
+CMD ["node", "/app/app.js"]
 
