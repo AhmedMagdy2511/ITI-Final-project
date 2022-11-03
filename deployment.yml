@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins
+  namespace: jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins-app
+  template:
+    metadata:
+      labels:
+        app: jenkins-app
+        
+    spec:
+      serviceAccountName: jenkins-admin
+      containers:
+        - name: jenkins
+          image: hassanashrafelshennawy/jenkins-agent-with-docker
+          securityContext:
+            allowPrivilegeEscalation: true
+            privileged: true 
+            readOnlyRootFilesystem: false
+            runAsUser: 0
+          ports:
+            - name: httpport
+              containerPort: 8080
+          volumeMounts:
+            - name: sock
+              mountPath: /var/run/docker.sock
+      volumes:
+        - name: sock
+          hostPath:
+            path: /var/run/docker.sock
+       
