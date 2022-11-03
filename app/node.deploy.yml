@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: node-app
-  namespace: node
+  namespace: jenkins-app
 spec:
   replicas: 1
   selector:
