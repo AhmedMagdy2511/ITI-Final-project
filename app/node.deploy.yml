@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-app-container
-          image: alimohamed125/django-app:latest
+          image: ahmedmagdy2511/jenkins_nodejs_example:28d91249f4b519fe18f74c4ae8a6eccb82117b53
           ports:
             - name: http-port
               containerPort: 3000
