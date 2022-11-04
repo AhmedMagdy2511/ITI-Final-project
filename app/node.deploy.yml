@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-app-container
-          image: mostafaashour99/py-app:latest
+          image: salmatolba/nodejs:latest
           ports:
             - name: http-port
               containerPort: 3000
