@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: node-app-container
-          image: salmatolba/nodejs:latest
+          image: alimohamed125/django-app:latest
           ports:
             - name: http-port
               containerPort: 3000
