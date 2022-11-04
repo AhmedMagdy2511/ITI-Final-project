@@ -2,7 +2,7 @@
 
 ## the tools we used to build this infrastructure 
 
-1-Terraform
+1- Terraform
 
 2- Docker
 
@@ -33,9 +33,8 @@ terraform appy
 
  ![image](https://user-images.githubusercontent.com/105854314/199911665-eab81bfe-cca2-462e-bca0-6b71593ba596.png)
 ## connect vm  and config cluster
-
-[![Screenshot from 2022-11-03 02-33-32](https://user-images.githubusercontent.com/111524157/199627198-bf2ab1eb-ee91-480f-84ab-267fea71b76a.png)](https://github.com/AhmedMagdy2511/ITI-Final-project/blob/master/screenshot/ssh-connection.png)
-https://github.com/AhmedMagdy2511/ITI-Final-project/blob/master/screenshot/connect%20cluster.png
+ ![image](https://github.com/AhmedMagdy2511/ITI-Final-project/blob/master/screenshot/ssh-connection.png)
+ ![image](https://github.com/AhmedMagdy2511/ITI-Final-project/blob/master/screenshot/connect%20cluster.png)
 ## Install kubctl in vm instance
 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -51,41 +50,37 @@ kubectl create namespace jenkins-ns1
 kubectl config set-context --current –namespace=jenkins
 kubectl create -f deployment.yaml
 kubectl create -f jenkins-service.yml.yaml
-![Screenshot from 2022-11-03 04-25-14](https://user-images.githubusercontent.com/111524157/199636890-6751585e-bb13-4f37-b795-65ba87ff8c3d.png)
+![image](https://user-images.githubusercontent.com/105854314/199916072-20cc1279-1a61-45d6-96cc-bf309f53bb74.png)
 
 
-![Screenshot from 2022-11-03 06-34-41](https://user-images.githubusercontent.com/111524157/199648284-05bb4455-eace-4794-b955-f1da5987497f.png)
+![image](https://user-images.githubusercontent.com/105854314/199916252-9b6b7afe-7fd6-4b85-80ad-33e51cad3e35.png)
 
 
 
-## Jenkins link : http://34.171.159.63:8080
+## Jenkins link : http://34.123.234.234:8080
 
-![Screenshot from 2022-11-03 06-33-06](https://user-images.githubusercontent.com/111524157/199648194-f4fcfd51-0138-4e1a-86a7-e42219b69aa3.png)
+![image](https://user-images.githubusercontent.com/105854314/199916459-3409791b-08af-4e4f-b117-b57a24732166.png)
 
 
 ## create credentials for dockerhub
 
-![Screenshot from 2022-11-03 06-37-07](https://user-images.githubusercontent.com/111524157/199648534-61a70e5d-5aa3-43b7-bd25-2d4e25818411.png)
-
-
-![Screenshot from 2022-11-03 06-46-59](https://user-images.githubusercontent.com/111524157/199649780-5cbf18ba-fdd0-4d27-9030-d676a042b793.png)
-
-![Screenshot from 2022-11-03 06-47-18](https://user-images.githubusercontent.com/111524157/199649794-06957722-dbf9-491a-bfb9-529a018f01fb.png)
-
+![image](https://user-images.githubusercontent.com/105854314/199916710-70291f91-0e08-4961-82a8-64492a5d7aa1.png)
 
 ### Pipline automated successfully
+![image](https://user-images.githubusercontent.com/105854314/199916956-3fff7473-7f3b-405d-b095-4abed3170bf9.png)
+
+![image](https://user-images.githubusercontent.com/105854314/199917225-7547a8bb-d048-4d0d-ae35-d4000545f3e0.png)
+
+
+
 
 ## Get IP:Port for the application
-
-![Screenshot from 2022-11-03 07-39-12](https://user-images.githubusercontent.com/111524157/199656272-e1085d6a-0f2a-44dc-a050-49a9b78b7956.png)
-
-![Screenshot from 2022-11-03 08-03-08](https://user-images.githubusercontent.com/111524157/199656720-1b413923-a121-47a0-8472-7cf0f0f3e7d4.png)
+![image](https://user-images.githubusercontent.com/105854314/199917445-4360d3ab-b43f-4594-9708-158c7442bfac.png)
 
 ## Finallyyyyyy
-## App link: http://34.133.126.189:3000/
+## App link: http://34.122.129.157:3000
 
-
-![Screenshot from 2022-11-03 07-40-20](https://user-images.githubusercontent.com/111524157/199657013-8042b242-438b-4911-9ead-173cdf4ec587.png)
+![image](https://user-images.githubusercontent.com/105854314/199917690-688564e6-6c8e-4102-aca9-2056b0856abb.png)
 
 
 
